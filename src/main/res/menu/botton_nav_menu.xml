@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bank"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_account_balance_24"
+        android:title="BANK"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/cash"
+        android:enabled="true"
+        android:icon="@drawable/cash_ex_icon"
+        android:title="CASH"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/bill"
+        android:enabled="true"
+        android:icon="@drawable/billicon"
+        android:title="BILL"
+        app:showAsAction="ifRoom" />
+</menu>

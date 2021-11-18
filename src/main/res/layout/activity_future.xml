@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FutureActivity"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/year"
+        android:layout_width="142dp"
+        android:layout_height="43dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:text="Graph for expected expenses for December month"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="435dp" />
+
+</LinearLayout>

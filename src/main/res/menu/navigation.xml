@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/trip"
+        android:icon="@drawable/ic_baseline_group_24"
+        android:title="Trip"/>
+    <item
+        android:id="@+id/chart"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="Stats"/>
+
+    <item
+        android:id="@+id/prediction"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="Prediction of Expenses"/>
+
+    <item
+        android:id="@+id/connect_us"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="Contact Us"/>
+    <item
+        android:id="@+id/privacy"
+        android:icon="@drawable/ic_privacy"
+        android:title="Privacy Policy"/>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/backimage"
+        android:title="Logout"/>
+    </group>
+
+</menu>

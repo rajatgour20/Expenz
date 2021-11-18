@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!--  It should be true otherwise action mode will not overlay toolbar -->
+        <item name="windowActionModeOverlay">true</item>
+
+        <!--  For Custom Action Mode Background Color/Drawable -->
+        <item name="actionModeBackground">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PasscodeEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/passcodelock_field_text_color</item>
+        <item name="android:textColorHint">@color/passcodelock_field_hint_text_color</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="rippleColor">@color/blue_500</item>
+        <item name="backgroundTint">@color/blue_500</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="PrimaryEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <item name="boxBackgroundColor">@color/background</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/blue_500</item>
+    </style>
+
+    <style name="PasscodeKeyboardButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/passcodelock_button_text_color</item>
+        <item name="android:textSize">25dp</item>
+        <item name="colorAccent">@color/gray_e5</item>
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+    </style>
+
+    <style name="PasscodeKeyboardImageStyle" parent="@style/PasscodeKeyboardButtonStyle">
+        <item name="android:tint">@color/passcodelock_button_image_color</item>
+    </style>
+
+</resources>

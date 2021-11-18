@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">EXPENZ</string>
+
+    <string-array name="currencySymbols">
+        <item>INR-(₹)</item>
+        <item>USD-($)</item>
+        <item>EUR-(€)</item>
+        <item>YEN-(¥)</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="open_navigationbar">Open</string>
+    <string name="close_navigationbar">Close</string>
+    <string name="policy">\nWe are very concerned about safeguarding the confidentiality of your information, we do not collect Personal
+        Information, and we employ administrative, physical and electronic measure designed to protect your Non-personal Information from
+        unauthorized access and use.\n \n#SENSITIVE INFORMATION\n \nWe ask that you do not send us or disclose any sensitive Information
+        (Example, Information related to origin, political opinions, religion, health, criminal background etc)on or through an Application.
+        \n \n#HOW DO WE USE INFORMATION\n \na. Personal Information. \nWe do not store personal information and therefore we do not disclose
+        your personal information\n \nb.NON-PERSONAL INFORMATION \nWe do not sell, trade, or otherwise transfer to outside parties your
+        information. We do not combine Non-Personal information with personal information (such as combining your name with your unique user
+        device number). \n\nc. Legal Reasons \nWe will access, use or disclose your information with other organizations or entites for reasons
+        that required by any applicable law, regulations, legal, process or enforceable government request; detect , prevent, or otherwise fraud,
+        security or technical issues; protect against harm to rights.\n \n#INFORMATION WE COLLECT\n \na. Personal Information \nWe do not
+        collect Personal Information. \nPersonal Information is information that identifies you or another person, such as your Name, Address,
+        Email ID, Telephone, Fax, SSN etc. \n \nb. Non-personal Information \nWe collect your non personal information when you visit our website
+        , including your device information(device ID excluded), Operation System, Logs \n \nc. Information you provide \nWe may collect your
+        information when you communicate with us or you give us."</string>
+    <string name="passcode">PIN</string>
+    <string name="passcode_manage">Manage passcode</string>
+    <string name="passcode_enter_old_passcode">Enter your old passcode</string>
+    <string name="passcode_re_enter_passcode">Re-enter your passcode</string>
+    <string name="passcode_change_passcode">Change passcode</string>
+    <string name="passcode_set">Passcode set</string>
+    <string name="passcode_wrong_passcode">Wrong passcode, please try again.</string>
+    <string name="passcode_preference_title">Passcode lock</string>
+    <string name="passcode_turn_off">Turn passcode off</string>
+    <string name="passcode_turn_on">Turn passcode on</string>
+
+    <string name="passcodelock_prompt_message">Enter your passcode</string>
+    <string name="passcodelock_hint"></string>
+    <string name="passcodelock_numpad_0">0</string>
+    <string name="passcodelock_numpad_1">1</string>
+    <string name="passcodelock_numpad_2">2</string>
+    <string name="passcodelock_numpad_3">3</string>
+    <string name="passcodelock_numpad_4">4</string>
+    <string name="passcodelock_numpad_5">5</string>
+    <string name="passcodelock_numpad_6">6</string>
+    <string name="passcodelock_numpad_7">7</string>
+    <string name="passcodelock_numpad_8">8</string>
+    <string name="passcodelock_numpad_9">9</string>
+
+    <!-- Preference keys -->
+    <string name="pref_key_passcode_toggle">turn_passcode_on_off</string>
+    <string name="pref_key_change_passcode">change_passcode</string>
+
+    <string name="passcode_description_delete">Delete</string>
+    <string name="passcode_description_fingerprint">Fingerprint authentication supported</string>
+
+</resources>

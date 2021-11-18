@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.s">
+    <uses-feature android:name="android.hardware.camera"    android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/loogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/loogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FutureActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".BillActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Showimagesactivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ManualExoenses_Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".passcode"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Privacy_Policy"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".stats"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SplitScreen"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="filter_view_example">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "https://www.splititeasy.com” -->
+                <data
+                    android:host="www.splititeasy.com"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddEditMemberActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddEditBillActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".HandleOnGroupClickActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".GroupListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".CreateNewGroupActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+    </application>
+</manifest>
