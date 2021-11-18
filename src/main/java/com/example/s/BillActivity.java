@@ -10,6 +10,7 @@ import androidx.core.content.PermissionChecker;
 import android.Manifest;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -81,25 +82,12 @@ public class BillActivity extends AppCompatActivity {
 //            }
 //            //}
 //        });
-
-        //        btnCamera.setOnClickListener(new View.OnClickListener() {
+//
+//        btnGallery.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-////                if (ActivityCompat.checkSelfPermission(MainActivity.this,
-////                        Manifest.permission.CAMERA) !=
-////                        PermissionChecker.PERMISSION_GRANTED) {
-////                    ActivityCompat.requestPermissions(MainActivity.this, new
-////                            String[]{Manifest.permission.CAMERA}, 11);
-////                }
-////                else {
-//                Intent in =
-//                        new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//                startActivityForResult(in, 113);
-//                if (in.resolveActivity(getPackageManager()) != null) {
-//                    startActivityForResult(in, REQUEST_IMAGE_CAPTURE);
-//                }
+//                restore();
 //            }
-//            //}
 //        });
 
 
@@ -112,6 +100,10 @@ public class BillActivity extends AppCompatActivity {
         objectIntent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(objectIntent, p);
     }
+
+//    public void restore() {
+//        et.setText("");
+//    }
 
 
     //old
@@ -302,6 +294,8 @@ public class BillActivity extends AppCompatActivity {
     public void storeimage(View view) {
         if (!et.getText().toString().isEmpty() && iv.getDrawable() != null && imagetostore != null) {
             o.storeimage(new Modelclass(et.getText().toString(), imagetostore));
+            et.setText("");
+            iv.setImageResource(R.drawable.add_picture1);
         } else {
             Toast.makeText(this, "ccccccccccc", Toast.LENGTH_SHORT).show();
         }
@@ -311,5 +305,6 @@ public class BillActivity extends AppCompatActivity {
     public void m(View view) {
         Intent in=new Intent(BillActivity.this,Showimagesactivity.class);
         startActivity(in);
+        getdata();
     }
 }
