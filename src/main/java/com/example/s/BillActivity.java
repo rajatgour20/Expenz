@@ -305,6 +305,5 @@ public class BillActivity extends AppCompatActivity {
     public void m(View view) {
         Intent in=new Intent(BillActivity.this,Showimagesactivity.class);
         startActivity(in);
-        getdata();
     }
 }
