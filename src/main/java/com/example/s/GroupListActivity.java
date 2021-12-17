@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GroupListActivity extends AppCompatActivity {
-    public static final String EXTRA_TEXT_GNAME = "com.nishantboro.splititeasy.EXTRA_TEXT_GNAME";
+    public static final String EXTRA_TEXT_GNAME = "com.s.splititeasy.EXTRA_TEXT_GNAME";
     private List<GroupEntity> groupNames = new ArrayList<>();
     private GroupListActivityViewAdapter adapter;
     private GroupViewModel groupViewModel;

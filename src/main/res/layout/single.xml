@@ -1,27 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    android:background="#e0ecff"
+    xmlns:card_view="http://schemas.android.com/tools"
+    >
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+    <!--    <Button-->
+    <!--        android:id="@+id/server"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Store at Server" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/internal"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Store In Internal Storage" />-->
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="24dp"
-        android:gravity="center"
-        android:text="image details"
-        android:textSize="24sp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_below="@+id/text"
-        android:layout_marginTop="18dp"
-        android:src="@drawable/ic_launcher_background" />
+        android:layout_marginBottom="5dp"
+
+        android:background="@drawable/round_cornor"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/round_cornor_dark"
+                android:gravity="center"
+                android:text="image details"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="415dp"
+                android:layout_height="400dp"
+                android:layout_below="@+id/text"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_launcher_background" />
+        </LinearLayout>
 
 
-</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

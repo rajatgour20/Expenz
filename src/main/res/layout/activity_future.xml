@@ -17,10 +17,10 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="163dp"
+        android:gravity="center"
         android:text="Graph for expected expenses for December month"
         android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="24sp"
+        android:textSize="16sp"
         tools:layout_editor_absoluteX="194dp"
         tools:layout_editor_absoluteY="157dp" />
 

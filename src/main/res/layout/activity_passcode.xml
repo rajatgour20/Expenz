@@ -14,77 +14,76 @@
 
     <TextView
         android:id="@+id/passcodelock_prompt"
-        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:paddingBottom="8dp"
+        android:gravity="center_horizontal"
         android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         android:text="SET PASSCODE"
         android:textColor="@color/passcodelock_prompt_text_color"
-        android:textSize="20sp">
-    </TextView>
+        android:textSize="20sp"></TextView>
 
     <LinearLayout
         android:id="@+id/AppUnlockLinearLayout1"
-        android:gravity="center"
-        android:layout_below="@id/passcodelock_prompt"
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/passcodelock_prompt"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/pin_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="25dp"
             android:hint="@string/passcodelock_hint"
-            android:textColorHint="#000000"
             android:importantForAutofill="no"
             android:inputType="numberPassword"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
             android:letterSpacing="0.3"
             android:maxLength="4"
+            android:textColorHint="#000000"
+            android:textSize="25dp"
 
-           >
-        </TextView>
+            ></TextView>
 
         <View
             android:id="@+id/divider"
-            android:background="@color/passcodelock_divider"
+            android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_width="match_parent">
-        </View>
+            android:background="@color/passcodelock_divider"></View>
 
         <TableLayout
             android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
             android:shrinkColumns="*"
             android:stretchColumns="*">
 
-            <TableRow>
+            <TableRow android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/button1"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_1"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
                 <Button
                     android:id="@+id/button2"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_2"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
                 <Button
                     android:id="@+id/button3"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_3"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
             </TableRow>
 
@@ -92,21 +91,21 @@
 
                 <Button
                     android:id="@+id/button4"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_4"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
                 <Button
                     android:id="@+id/button5"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_5"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
                 <Button
                     android:id="@+id/button6"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_6"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
             </TableRow>
 
@@ -114,21 +113,21 @@
 
                 <Button
                     android:id="@+id/button7"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_7"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
                 <Button
                     android:id="@+id/button8"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_8"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
                 <Button
                     android:id="@+id/button9"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_9"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
             </TableRow>
 
@@ -136,32 +135,30 @@
 
                 <ImageButton
                     android:id="@+id/image_fingerprint"
+                    style="@style/PasscodeKeyboardImageStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
                     android:clickable="false"
                     android:contentDescription="@string/passcode_description_fingerprint"
                     android:focusable="false"
-                    android:layout_height="fill_parent"
-                    android:layout_width="fill_parent"
-                    android:scaleType="centerInside"
 
-                    android:visibility="invisible"
-                    style="@style/PasscodeKeyboardImageStyle">
-                </ImageButton>
+                    android:scaleType="centerInside"
+                    android:visibility="invisible"></ImageButton>
 
                 <Button
                     android:id="@+id/button0"
+                    style="@style/PasscodeKeyboardButtonStyle"
                     android:text="@string/passcodelock_numpad_0"
-                    style="@style/PasscodeKeyboardButtonStyle">
-                </Button>
+                    android:textColor="#ffffff"></Button>
 
                 <ImageButton
                     android:id="@+id/button_erase"
-                    android:contentDescription="@string/passcode_description_delete"
-                    android:layout_height="fill_parent"
+                    style="@style/PasscodeKeyboardImageStyle"
                     android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="@string/passcode_description_delete"
                     android:scaleType="centerInside"
-                    android:src="@drawable/ic_backspace_white_24dp"
-                    style="@style/PasscodeKeyboardImageStyle">
-                </ImageButton>
+                    android:src="@drawable/ic_backspace_white_24dp"></ImageButton>
 
             </TableRow>
 
